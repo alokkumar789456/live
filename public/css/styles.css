@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  #container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+  }
+  
+  #map {
+    flex: 1;
+    height: 100vh;
+  }
+  
+  #sidebar {
+    width: 300px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #user-controls {
+    margin-bottom: 20px;
+  }
+  
+  #user-controls input,
+  #user-controls button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    outline: none;
+  }
+  
+  #user-controls button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #toggle-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  #user-controls button:hover {
+    background-color: #45a049;
+  }
+  
+  #chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+  }
+  
+  #chat h2 {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  #chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  #message-controls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #message-controls input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  #message-controls button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #message-controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    #container {
+      flex-direction: column;
+    }
+  
+    #sidebar {
+      width: 100%;
+      height: 40vh;
+      order: 2;
+    }
+  
+    #map {
+      height: 60vh;
+    }
+  }
+  

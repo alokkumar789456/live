@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sg20cse019</title>
+  <link rel="icon" href="/images/favicon_io/favicon-32x32.png" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="sidebar">
+      <div id="user-controls">
+        <input type="text" id="username" placeholder="Enter your name" />
+        <button id="join-btn">Join</button>
+        <div id="toggle-controls">
+          <label for="live-toggle">Live Location</label>
+          <input type="checkbox" id="live-toggle" />
+        </div>
+      </div>
+      <div id="chat">
+        <h2>Live Chat</h2>
+        <div id="chat-box"></div>
+        <div id="message-controls">
+          <input type="text" id="message" placeholder="Type a message..." />
+          <button id="send-btn">Send</button>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+  <script src="https://cdn.socket.io/4.8.0/socket.io.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>
